@@ -1,5 +1,5 @@
 :root{
-    --text-color:#FFFFFF;
+
     --bg-linear-color: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
 
@@ -14,7 +14,6 @@
 }
 
 .custom-btn{
-    color: var(--text-color);
     padding: 13px 16px;
 
     background: var(--bg-linear-color);
