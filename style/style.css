@@ -22,3 +22,81 @@
 
     background: var(--bg-linear-color);
 }
+
+/* Figma Mobile Pixel-Perfect (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  
+
+  .podcast-review-container {
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 2rem !important;
+    padding: 3rem 0 !important;
+    text-align: center !important;
+  }
+  .podcast-review h2 {
+    font-size: 2.5rem !important; 
+  }
+
+
+  .feature-video-containe {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2.5rem !important;
+  }
+  .video-card {
+    width: 100% !important;
+    max-width: 380px !important;
+  }
+  .video-card iframe {
+    width: 100% !important;
+    height: 214px !important;
+  }
+
+
+  h1.text-5xl, 
+  .techwave-section h1, 
+  .video-host-container h1 {
+    font-size: 2rem !important;
+    text-align: center !important;
+   
+  }
+
+
+  .tech-card-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .tech-card {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+  }
+
+
+  .host-container {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 2.5rem 1.5rem !important;
+  }
+  .host-container img {
+    margin: 0 auto 1.5rem auto !important;
+  }
+  .host-info .flex {
+    justify-content: center !important;
+  }
+
+
+  .socal-link-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+    justify-items: center !important;
+    padding: 2.5rem 0 !important;
+  }
+  
+
+  body, html {
+    overflow-x: hidden !important;
+  }
+}
