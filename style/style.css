@@ -142,12 +142,7 @@
     }
 
    
-    .tech-card-container {
-        display: grid !important;
-        grid-template-columns: 380px 1fr 1fr !important; 
-        gap: 1.875rem !important;
-        width: 100% !important;
-    }
+   ÷
 
    
     .feature-video-containe {
