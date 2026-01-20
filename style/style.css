@@ -3,6 +3,12 @@
     --bg-linear-color: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
 
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
 .nav-logo{
     background: var(--bg-linear-color);
     background-clip:text;
@@ -17,14 +23,19 @@
     font-size: 4rem; 
 }
 
-.custom-btn{
+.custom-btn, .banner-btn{
     padding: 13px 16px;
 
     background: var(--bg-linear-color);
 }
 
-/* Figma Mobile Pixel-Perfect (max-width: 576px) */
+
+/* mobaile device reponsive (max-width: 576px) */
 @media screen and (max-width: 576px) {
+
+    nav ul,.custom-btn{
+        display: none !important;
+    }
   
 
   .podcast-review-container {
@@ -99,4 +110,103 @@
   body, html {
     overflow-x: hidden !important;
   }
+}
+
+
+
+   /* large device  responsive */
+@media screen and (min-width: 992px) {
+
+    nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 1.5rem 8% !important;
+        position: relative;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+        gap: 2.5rem !important;
+    }
+
+
+    .podcast-review-container {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        width: 85% !important;
+        margin: 0 auto;
+    }
+
+   
+    .tech-card-container {
+        display: grid !important;
+        grid-template-columns: 380px 1fr 1fr !important; 
+        gap: 1.875rem !important;
+        width: 100% !important;
+    }
+
+   
+    .feature-video-containe {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 1.875rem !important;
+        width: 85% !important; 
+        margin: 0 auto !important;
+        overflow: visible !important;
+    }
+
+    .video-card {
+        width: 100% !important;
+        max-width: 380px !important;
+        margin: 0 auto;
+    }
+
+    .video-card iframe {
+        width: 100% !important; 
+    }
+
+    .host-container {
+        display: flex !important;
+        flex-direction: row !important;
+        text-align: left !important;
+        padding: 4rem !important;
+        align-items: center !important;
+        gap: 4rem !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+    }
+
+    .host-container img {
+        margin: 0 !important;
+        width: 350px !important;
+        height: auto !important;
+        border-radius: 1.5rem;
+    }
+
+    .host-info {
+        padding-left: 0 !important;
+    }
+
+   
+    .socal-link-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 3.5rem !important;
+        padding: 2.5rem 0 !important;
+    }
+}
+
+.custom-btn, .banner-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.custom-btn:hover, .banner-btn:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
 }
