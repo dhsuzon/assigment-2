@@ -7,10 +7,14 @@
     background: var(--bg-linear-color);
     background-clip:text;
     color: transparent;
-    font-size: 1rem;
-  
-
     font-size: 2rem;
+
+}
+.footer-logo{
+   background: var(--bg-linear-color);
+    background-clip:text;
+    color: transparent;
+    font-size: 4rem; 
 }
 
 .custom-btn{
